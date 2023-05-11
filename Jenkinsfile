@@ -1,6 +1,6 @@
 pipeline {
   agent { 
-  label 'ansiblenode'
+  label 'any'
   }
   
   environment {
@@ -12,7 +12,7 @@ pipeline {
     //Get the Code from GitHub Repo
     stage('CheckOutCode'){
       steps{
-        git "https://github.com/LandmakTechnology/jenkins-ansible"
+        git "https://github.com/Lion-Technology-Solutions/jenkins-ansible.git"
         }
     }
      
